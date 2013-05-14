@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+       Licensed to the Apache Software Foundation (ASF) under one
+       or more contributor license agreements.  See the NOTICE file
+       distributed with this work for additional information
+       regarding copyright ownership.  The ASF licenses this file
+       to you under the Apache License, Version 2.0 (the
+       "License"); you may not use this file except in compliance
+       with the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing,
+       software distributed under the License is distributed on an
+       "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+       KIND, either express or implied.  See the License for the
+       specific language governing permissions and limitations
+       under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:windowSoftInputMode="adjustPan"
+      package="com.pt.marcopolo.projectToGitHub" android:versionName="1.0" android:versionCode="1" android:hardwareAccelerated="true">
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true"
+        />
+
+
+        <uses-permission android:name="
+Expression permission.androidConfig is undefined on line 33, column 42 in AndroidManifest.xml.
+The problematic instruction:
+----------
+==> ${permission.androidConfig} [on line 33, column 40 in AndroidManifest.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression permission.androidConfig is undefined on line 33, column 42 in AndroidManifest.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:179)
+	at freemarker.core.Environment.visit(Environment.java:415)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:102)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.Environment.process(Environment.java:188)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.pt.marcopolo.freemarker.TplManagerImpl.freemarkerDo(TplManagerImpl.java:49)
+	at com.pt.marcopolo.freemarker.TplManagerImpl.writeTpl(TplManagerImpl.java:32)
+	at com.pt.marcopolo.freemarker.TplManagerImpl$writeTpl.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124)
+	at com.pt.marcopolo.git.GitActionsService.compileTpl(GitActionsService.groovy:114)
+	at com.pt.marcopolo.git.GitActionsService.this$2$compileTpl(GitActionsService.groovy)
+	at com.pt.marcopolo.git.GitActionsService$this$2$compileTpl.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at com.pt.marcopolo.git.GitActionsService.generateMavenArchetype(GitActionsService.groovy:85)
+	at com.pt.marcopolo.git.GitActionsService$$FastClassByCGLIB$$2b16f46f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:191)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:689)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
+	at com.pt.marcopolo.git.GitActionsService$$EnhancerByCGLIB$$b8678723.generateMavenArchetype(<generated>)
+	at com.pt.marcopolo.git.GitActionsService$generateMavenArchetype.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.pt.marcopolo.privatearea.project.PublisherController.publish(PublisherController.groovy:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.groovy.grails.web.servlet.mvc.MixedGrailsControllerHelper.invoke(MixedGrailsControllerHelper.java:67)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleAction(AbstractGrailsControllerHelper.java:330)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.executeAction(AbstractGrailsControllerHelper.java:211)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:177)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:116)
+	at org.codehaus.groovy.grails.web.servlet.mvc.SimpleGrailsController.handleRequest(SimpleGrailsController.java:72)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:325)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:827)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:70)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:70)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:70)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:312)
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:277)
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:268)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:209)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:200)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:151)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:947)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1009)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
