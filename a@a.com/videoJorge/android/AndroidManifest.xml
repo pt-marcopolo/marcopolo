@@ -44,16 +44,17 @@
 <!--     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
 <!--     <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
 <!--     <uses-permission android:name="android.permission.BROADCAST_STICKY" /> -->
-        <uses-permission android:name="
-Expression permission.androidConfig is undefined on line 48, column 42 in AndroidManifest.xml.
+        <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+        
+Expression permission.androidConfig is undefined on line 48, column 11 in AndroidManifest.xml.
 The problematic instruction:
 ----------
-==> ${permission.androidConfig} [on line 48, column 40 in AndroidManifest.xml]
+==> ${permission.androidConfig} [on line 48, column 9 in AndroidManifest.xml]
 ----------
 
 Java backtrace for programmers:
 ----------
-freemarker.core.InvalidReferenceException: Expression permission.androidConfig is undefined on line 48, column 42 in AndroidManifest.xml.
+freemarker.core.InvalidReferenceException: Expression permission.androidConfig is undefined on line 48, column 11 in AndroidManifest.xml.
 	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
 	at freemarker.core.Expression.getStringValue(Expression.java:118)
 	at freemarker.core.Expression.getStringValue(Expression.java:93)
@@ -185,7 +186,7 @@ freemarker.core.InvalidReferenceException: Expression permission.androidConfig i
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:987)
 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:579)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:307)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
