@@ -44,7 +44,6 @@
 <!--     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
 <!--     <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
 <!--     <uses-permission android:name="android.permission.BROADCAST_STICKY" /> -->
-        <uses-permission android:name="<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />" />
         <uses-permission android:name="
 Expression permission.androidConfig is undefined on line 48, column 42 in AndroidManifest.xml.
 The problematic instruction:
@@ -73,16 +72,11 @@ freemarker.core.InvalidReferenceException: Expression permission.androidConfig i
 	at com.pt.marcopolo.freemarker.TplManagerImpl.freemarkerDo(TplManagerImpl.java:49)
 	at com.pt.marcopolo.freemarker.TplManagerImpl.writeTpl(TplManagerImpl.java:32)
 	at com.pt.marcopolo.freemarker.TplManagerImpl$writeTpl.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124)
 	at com.pt.marcopolo.git.GitActionsService$$EO5pwodk.compileTpl(GitActionsService.groovy:114)
 	at com.pt.marcopolo.git.GitActionsService$$EO5pwodk.this$2$compileTpl(GitActionsService.groovy)
 	at com.pt.marcopolo.git.GitActionsService$$DO5pwodk.this$2$compileTpl(Unknown Source)
 	at com.pt.marcopolo.git.GitActionsService.this$2$compileTpl(GitActionsService.groovy)
 	at com.pt.marcopolo.git.GitActionsService$this$2$compileTpl.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
 	at com.pt.marcopolo.git.GitActionsService$$EO5pwodk.generateMavenArchetype(GitActionsService.groovy:85)
 	at com.pt.marcopolo.git.GitActionsService$$DO5pwodk.generateMavenArchetype(Unknown Source)
 	at com.pt.marcopolo.git.GitActionsService.generateMavenArchetype(GitActionsService.groovy)
@@ -94,8 +88,6 @@ freemarker.core.InvalidReferenceException: Expression permission.androidConfig i
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
 	at com.pt.marcopolo.git.GitActionsService$$EnhancerByCGLIB$$a97356d8.generateMavenArchetype(<generated>)
-	at com.pt.marcopolo.git.GitActionsService$generateMavenArchetype.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
 	at com.pt.marcopolo.git.GitActionsService$generateMavenArchetype.call(Unknown Source)
 	at com.pt.marcopolo.privatearea.project.PublisherController.publish(PublisherController.groovy:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
