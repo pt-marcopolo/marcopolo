@@ -38,9 +38,9 @@
 <plugins>
 
 	<plugin name="Compass" value="org.apache.cordova.CompassListener"/>
+	<plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
 	<plugin name="Accelerometer" value="org.apache.cordova.AccelListener"/>
 	<plugin name="Device" value="org.apache.cordova.Device"/>
-	<plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
 
 
 </plugins>
