@@ -28,6 +28,11 @@
         android:anyDensity="true"
         />
 
+<#list permissions as permission >
+	<#if permission.androidConfig?has_content>
+        ${permission.androidConfig}
+    </#if>
+ </#list>
 
 
     <application android:label="@string/app_name"
