@@ -28,18 +28,27 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-
-Expected collection or sequence. permissions evaluated instead to freemarker.template.SimpleNumber on line 32, column 12 in www/config.xml.
+        <feature name="http://api.phonegap.com/1.0/network"/>
+        
+Expression permission.phonegapConfig is undefined on line 35, column 11 in www/config.xml.
 The problematic instruction:
 ----------
-==> list permissions as permission [on line 32, column 5 in www/config.xml]
+==> ${permission.phonegapConfig} [on line 35, column 9 in www/config.xml]
 ----------
 
 Java backtrace for programmers:
 ----------
-freemarker.template.TemplateException: Expected collection or sequence. permissions evaluated instead to freemarker.template.SimpleNumber on line 32, column 12 in www/config.xml.
-	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135)
-	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:190)
+freemarker.core.InvalidReferenceException: Expression permission.phonegapConfig is undefined on line 35, column 11 in www/config.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:79)
+	at freemarker.core.Environment.visit(Environment.java:208)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:179)
 	at freemarker.core.Environment.visit(Environment.java:415)
 	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:102)
 	at freemarker.core.Environment.visit(Environment.java:208)
@@ -50,16 +59,11 @@ freemarker.template.TemplateException: Expected collection or sequence. permissi
 	at com.pt.marcopolo.freemarker.TplManagerImpl.freemarkerDo(TplManagerImpl.java:49)
 	at com.pt.marcopolo.freemarker.TplManagerImpl.writeTpl(TplManagerImpl.java:32)
 	at com.pt.marcopolo.freemarker.TplManagerImpl$writeTpl.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124)
 	at com.pt.marcopolo.git.GitActionsService$$EO7ih6Zc.compileTpl(GitActionsService.groovy:125)
 	at com.pt.marcopolo.git.GitActionsService$$EO7ih6Zc.this$2$compileTpl(GitActionsService.groovy)
 	at com.pt.marcopolo.git.GitActionsService$$DO7ih6Zc.this$2$compileTpl(Unknown Source)
 	at com.pt.marcopolo.git.GitActionsService.this$2$compileTpl(GitActionsService.groovy)
 	at com.pt.marcopolo.git.GitActionsService$this$2$compileTpl.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
 	at com.pt.marcopolo.git.GitActionsService$$EO7ih6Zc.generateMavenArchetype(GitActionsService.groovy:93)
 	at com.pt.marcopolo.git.GitActionsService$$DO7ih6Zc.generateMavenArchetype(Unknown Source)
 	at com.pt.marcopolo.git.GitActionsService.generateMavenArchetype(GitActionsService.groovy)
@@ -71,8 +75,6 @@ freemarker.template.TemplateException: Expected collection or sequence. permissi
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
 	at com.pt.marcopolo.git.GitActionsService$$EnhancerByCGLIB$$c06132e9.generateMavenArchetype(<generated>)
-	at com.pt.marcopolo.git.GitActionsService$generateMavenArchetype.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
 	at com.pt.marcopolo.git.GitActionsService$generateMavenArchetype.call(Unknown Source)
 	at com.pt.marcopolo.privatearea.project.ProjectController$_closure13.doCall(ProjectController.groovy:290)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
