@@ -28,10 +28,7 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-        <feature name="http://api.phonegap.com/1.0/camera"/>
-        <feature name="http://api.phonegap.com/1.0/network"/>
-        <feature name="http://api.phonegap.com/1.0/contacts"/>
-        <feature name="http://api.phonegap.com/1.0/camera"/>
+    	<preference name="permissions" value="none"/>
     
 
     <!-- Customize your app and platform with the preference element. -->
