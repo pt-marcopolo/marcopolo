@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Marco-Polo/!svn/ver/169/trunk/web-app/WEB-INF/archetypes/phonegap-start-master
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Marco-Polo/!svn/ver/169/trunk/web-app/WEB-INF/archetypes/phonegap-start-master/LICENSE
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Marco-Polo/!svn/ver/169/trunk/web-app/WEB-INF/archetypes/phonegap-start-master/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Marco-Polo/!svn/ver/169/trunk/web-app/WEB-INF/archetypes/phonegap-start-master/README.md
+END
+UPDATING.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Marco-Polo/!svn/ver/169/trunk/web-app/WEB-INF/archetypes/phonegap-start-master/UPDATING.md
+END
