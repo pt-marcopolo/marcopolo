@@ -6,11 +6,11 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>foundation</name>
+    <name>fundi</name>
 
     <description>
         Created by MarcoPolo
-        "foundation" sample application that responds to the deviceready event.
+        "fundi" sample application that responds to the deviceready event.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
@@ -28,7 +28,7 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    	<preference name="permissions" value="none"/>
+        <feature name="http://api.phonegap.com/1.0/network"/>
     
 
     <!-- Customize your app and platform with the preference element. -->
